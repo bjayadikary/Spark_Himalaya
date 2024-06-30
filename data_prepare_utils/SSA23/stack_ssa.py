@@ -98,14 +98,15 @@ def main():
 
     # Determine the destination directories based on the flag
     if args.flag == 'train':
-        destination_images_dir = os.path.join(os.getcwd(), 'stacked', 'TrainVolumes')
-        destination_labels_dir = os.path.join(os.getcwd(), 'stacked', 'TrainSegmentations')
+        destination_images_dir = os.path.join(os.getcwd(), 'SSA/stacked', 'TrainVolumes')
+        destination_labels_dir = os.path.join(os.getcwd(), 'SSA/stacked', 'TrainSegmentations')
     elif args.flag == 'val':
-        destination_images_dir = os.path.join(os.getcwd(), 'stacked', 'ValVolumes')
-        destination_labels_dir = os.path.join(os.getcwd(), 'stacked', 'ValSegmentations')
+        destination_images_dir = os.path.join(os.getcwd(), 'SSA/stacked', 'ValVolumes')
+        destination_labels_dir = os.path.join(os.getcwd(), 'SSA/stacked', 'ValSegmentations')
     elif args.flag == 'test':
-        destination_images_dir = os.path.join(os.getcwd(), 'stacked', 'TestVolumes')
-        destination_labels_dir = os.path.join(os.getcwd(), 'stacked', 'TestSegmentations') 
+        
+        destination_images_dir = os.path.join(os.getcwd(), 'SSA/stacked', 'TestVolumes')
+        destination_labels_dir = os.path.join(os.getcwd(), 'SSA/stacked', 'TestSegmentations') 
     else:
         raise ValueError(f"Invalid choice for --flag: '{args.flag}'. Must be one of 'train', 'val', 'test'.")
     

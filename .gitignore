@@ -103,7 +103,11 @@ celerybeat.pid
 *.sage.py
 
 
-stacked/
+train_subset/
+val_subset/
+test_subset/
+BRATS/
+SSA/
 
 # Environments
 .venv
